@@ -1,17 +1,147 @@
 @extends('layouts.app')
 
 @section('content')
-	<header class="service">
-	  <div class="container h-100">
-	    <div class="row h-100 align-items-center">
-	      <div class="col-12 text-center">
-	        <h1 class="font-weight-light">List of Services we Offer</h1>
-	        <p class="lead">These are the simple steps one can follow to me an order</p>
-	      </div>
-	    </div>
-	  </div>
-	</header>
-	<div class="justify-content-center py-3">
+	<!--== Start Service Page Hero Area  ==-->
+    <div class="service-page-hero-area bg-img parallax" data-parallax-speed="0.75"
+        data-bg="img/extra/service-page-hero-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 m-auto text-center">
+                    <div class="about-me-hero-content">
+                        <div class="about-me-hero-content--inner mt-5">
+                            <h2>Our services</h2>
+                            <p>We create experiences that transform brands, grow businesses and make people’s lives
+                                better. Small teams working on big challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== End Service Page Hero Area  ==-->
+    <!--== Start Service Page Content Area ==-->
+    <div class="service-page-service">
+        <div class="container">
+            <div class="service-inner-wrap sm-top">
+                <div class="row mtn-30">
+                    <div class="col-md-4 text-center">
+                        <div class="icon-box-item">
+                            <div class="icon-box__icon"><i class="icon-basic-pencil-ruler"></i></div>
+                            <div class="icon-box__txt">
+                                <h6>Digital Solutions</h6>
+                                <p>Find success in the digital world, where clients love evolving technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="icon-box-item">
+                            <div class="icon-box__icon"><i class="icon-basic-message-txt"></i></div>
+                            <div class="icon-box__txt">
+                                <h6>Communications</h6>
+                                <p>Brands are business assets. They drive choice, create value, and engender
+                                    loyalty.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="icon-box-item">
+                            <div class="icon-box__icon"><i class="icon-basic-globe"></i></div>
+                            <div class="icon-box__txt">
+                                <h6>Creative Strategy</h6>
+                                <p>Brands are business assets. They drive choice, create value, and engender
+                                    loyalty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== End Service Page Content Area ==-->
+    <!--== Start Service Page Feature Area  ==-->
+            <div class="service-page-feature-area py-lg-5 sm-top bg-img"
+                data-bg="img/extra/presentation-feature.jpg">
+                <div class="service-page-feature-content sp-y">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <h4 class="mb-0 text-brand">A creative agency specialized in brand strategy and digital
+                                    creation.</h4>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="list-box-item mt-lg-0">
+                                    <div class="list-box__info">
+                                        <h6 class="text-brand">BRANDING</h6>
+                                        <p>We combine classic brand strategy and account planning with digital strategy,
+                                            data and user research to find a brand’s true capability. Then we turn this
+                                            capability into products and campaigns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="list-box-item mt-lg-0">
+                                    <div class="list-box__info">
+                                        <h6 class="text-brand">USER EXPERIENCE</h6>
+                                        <p>We enable new user behaviors with relevant, useful and engaging design that
+                                            drives growth for impacts people’s lives. Digital devices and platforms augment
+                                            our ability to think.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-10">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">01</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Brainstorm</h6>
+                                        <p>All the team gather to think about the issue, discuss and give ideas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">02</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Design</h6>
+                                        <p>Sketch, PSD or Firework the ideas into visible design layouts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">03</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Product testing</h6>
+                                        <p>Creative director review the final design and see if we can release it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--== End Service Page Feature Area  ==-->
+            <!--== Start Call to Action Area ==-->
+            <div class="call-to-action-modern bg-brand">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="call-to-action-content call-to-action-content--business">
+                                <h4>Start a new project?</h4><a href="contact.html" class="btn btn-bordered">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--== End Call to Action Area ==-->
+	{{-- <div class="justify-content-center py-3">
         <div class="row justify-content-center">
            <h2 class="featurette px-4">Academic Paper Writing Service</h2>
        </div>
@@ -121,6 +251,6 @@
                </ul>
            </div>
        </div>
-    </div>
+    </div> --}}
     @include('includes.footer')
 @endsection

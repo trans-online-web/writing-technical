@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>My Assignments Experts</title>
+    <title>Technical Writing</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet">
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="col-7 col-lg-2">
-                        <div class="header-action-area text-right"><a href="cart.html" class="btn-cart"><span
+                        <div class="header-action-area text-right"><a href="/login" class="btn-cart"><span
                                     class="fas fa-sign-in-alt"> Sign Up</span> </a> <button class="btn-menu d-lg-none"><span></span> <span></span> <span></span></button></div>
                     </div>
                 </div>
