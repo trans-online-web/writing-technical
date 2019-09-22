@@ -167,9 +167,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="image">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+                    <a href="#" class="d-block text-dark">{{ Auth::user()->name }}</a>
                     <p>
-                        <a href="#" class="d-block">{{ Auth::user()->type }}</a>
+                        <a href="#" class="d-block text-dark">{{ Auth::user()->type }}</a>
                     </p>
                 </div>
             </div>
@@ -180,7 +180,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <router-link to="/dashboard" class="nav-link">
+                        <router-link to="/dashboard" class="nav-link text-dark">
                             <i class="nav-icon fas fa-tachometer-alt blue"></i>
                             <p>
                                 Dashboard
@@ -188,7 +188,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/chat" class="nav-link">
+                        <router-link to="/chat" class="nav-link text-dark">
                             <i class="fas fa-comment-alt yellow"></i>
                             <p>
                                 Chat
@@ -196,7 +196,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/subject" class="nav-link">
+                        <router-link to="/subject" class="nav-link text-dark">
                             <i class="nav-icon fas fa-book-open green"></i>
                             <p>
                                 Subject
@@ -204,7 +204,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/documents" class="nav-link">
+                        <router-link to="/documents" class="nav-link text-dark">
                             <i class="fas fa-file-word indigo"></i>
                             <p>
                                 Documents
@@ -212,7 +212,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/levels" class="nav-link">
+                        <router-link to="/levels" class="nav-link text-dark">
                             <i class="nav-icon fas fa-level-up-alt cyan"></i>
                             <p>
                                 Levels
@@ -220,7 +220,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/orders" class="nav-link">
+                        <router-link to="/orders" class="nav-link text-dark">
                             <i class="nav-icon fas fa-book white"></i>
                             <p>
                                Orders
@@ -228,7 +228,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/MyOrder" class="nav-link">
+                        <router-link to="/MyOrder" class="nav-link text-dark">
                            <i class="fas fa-folder blue"></i>
                             <p>
                                 MyOrders
@@ -236,7 +236,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/user" class="nav-link">
+                        <router-link to="/user" class="nav-link text-dark">
                             <i class=" nav-icon fas fa-users-cog indigo"></i>
                             <p>
                                User Management
@@ -244,7 +244,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="{{ route('logout') }}"
+                        <a class="nav-link text-dark" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                             <i class="nav-icon fa fa-power-off red"></i>
