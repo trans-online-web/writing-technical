@@ -99,6 +99,17 @@ class TaskController extends Controller
         return Files::where('task_id', $orderId)->get();
     }
 
+    public function addPrice(Request $request, $orderId)
+    {
+        $request->validate([
+            'price' => 'required',
+        ]);
+        
+        $task = Task::findOrFail($orderId);
+        $task->price = $request->price;
+        $task->update();
+    }
+
     public function addFiles(Request $request, $orderId)
     {
         $request->validate([

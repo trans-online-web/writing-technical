@@ -3634,6 +3634,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3643,12 +3679,40 @@ __webpack_require__.r(__webpack_exports__);
       files: {},
       attachments: [],
       formf: new FormData(),
-      form: new Form({})
+      form: new Form({
+        price: ''
+      })
     };
   },
   methods: {
-    submit: function submit() {
+    addPrice: function addPrice() {
       var _this = this;
+
+      this.form.post('/api/price/' + this.orderId).then(function () {
+        Fire.$emit('entry');
+        toast.fire({
+          type: 'success',
+          title: 'Price updated successfully'
+        });
+
+        _this.form.reset();
+
+        $('#price').modal('hide');
+      })["catch"](function (error) {
+        _this.errors = error.response.data.errors;
+        swal.fire({
+          type: 'error',
+          title: 'Error!!',
+          text: error.response.data.msg
+        });
+      });
+    },
+    priceModal: function priceModal() {
+      this.form.reset();
+      $('#price').modal('show');
+    },
+    submit: function submit() {
+      var _this2 = this;
 
       for (var i = 0; i < this.attachments.length; i++) {
         this.formf.append('pics[]', this.attachments[i]);
@@ -3663,7 +3727,7 @@ __webpack_require__.r(__webpack_exports__);
         Fire.$emit('entry');
         $('#addnew').modal('hide');
 
-        _this.form.reset();
+        _this2.form.reset();
 
         swal.fire({
           type: 'success',
@@ -3694,34 +3758,39 @@ __webpack_require__.r(__webpack_exports__);
       axios.get("/api/download/" + id).then();
     },
     getDetails: function getDetails() {
-      var _this2 = this;
+      var _this3 = this;
 
       axios.get("/api/task/" + this.orderId).then(function (_ref) {
         var data = _ref.data;
-        return [_this2.details = data];
+        return [_this3.details = data];
       });
     },
     getFilesCount: function getFilesCount() {
-      var _this3 = this;
+      var _this4 = this;
 
       axios.get("/api/ifFiles/" + this.orderId).then(function (_ref2) {
         var data = _ref2.data;
-        return [_this3.filesCount = data];
+        return [_this4.filesCount = data];
       });
     },
     getFiles: function getFiles() {
-      var _this4 = this;
+      var _this5 = this;
 
       axios.get("/api/getFiles/" + this.orderId).then(function (_ref3) {
         var data = _ref3.data;
-        return [_this4.files = data];
+        return [_this5.files = data];
       });
     }
   },
   created: function created() {
+    var _this6 = this;
+
     this.getDetails();
     this.getFilesCount();
     this.getFiles();
+    Fire.$on('entry', function () {
+      _this6.getDetails();
+    });
   }
 });
 
@@ -86878,6 +86947,30 @@ var render = function() {
                                 _vm._v("$" + _vm._s(_vm.details.budget))
                               ])
                             ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Agreed Price")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _c("span", [
+                                _vm._v("$" + _vm._s(_vm.details.price))
+                              ]),
+                              _vm._v(" "),
+                              !_vm.details.price
+                                ? _c("span", [
+                                    _c(
+                                      "button",
+                                      {
+                                        staticClass: "btn btn-sm btn-primary",
+                                        attrs: { type: "button" },
+                                        on: { click: _vm.priceModal }
+                                      },
+                                      [_vm._v("Add")]
+                                    )
+                                  ])
+                                : _vm._e()
+                            ])
                           ])
                         ])
                       ])
@@ -87136,6 +87229,91 @@ var render = function() {
           ]
         )
       ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "price",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "addnewLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _vm._m(13),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.addPrice()
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "modal-body" }, [
+                    _c(
+                      "div",
+                      { staticClass: "form-group" },
+                      [
+                        _c("label", { attrs: { for: "price" } }, [
+                          _vm._v("Price")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.form.price,
+                              expression: "form.price"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          class: { "is-invalid": _vm.form.errors.has("price") },
+                          attrs: {
+                            type: "number",
+                            name: "price",
+                            id: "price",
+                            placeholder: "price"
+                          },
+                          domProps: { value: _vm.form.price },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.form, "price", $event.target.value)
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("has-error", {
+                          attrs: { form: _vm.form, field: "price" }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(14)
+                ]
+              )
+            ])
+          ]
+        )
+      ]
     )
   ])
 }
@@ -87308,6 +87486,53 @@ var staticRenderFns = [
         [
           _c("i", { staticClass: "fas fa-cloud-upload-alt" }),
           _vm._v("\n                          Upload\n                        ")
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h5", { staticClass: "modal-title", attrs: { id: "addnewLabel" } }, [
+        _vm._v("Agreed Price($)")
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("Close")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-success", attrs: { type: "submit" } },
+        [
+          _c("i", { staticClass: "fas fa-save" }),
+          _vm._v("\n                          Save\n                        ")
         ]
       )
     ])
@@ -105236,8 +105461,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kryme/Documents/writting-website (clone 1)/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/kryme/Documents/writting-website (clone 1)/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /opt/lampp/htdocs/Transonline/writing-technical/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /opt/lampp/htdocs/Transonline/writing-technical/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

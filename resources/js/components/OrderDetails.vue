@@ -37,6 +37,13 @@
                   <td>Client's Budget</td>
                   <td><span>${{details.budget}}</span></td>
                 </tr>
+                <tr>
+                  <td>Agreed Price</td>
+                  <td>
+                    <span>${{details.price}}</span>
+                    <span v-if="!details.price"><button type="button" class="btn btn-sm btn-primary" @click="priceModal">Add</button></span>
+                  </td>
+                </tr>
               </tbody></table>
             </div>
             <!-- /.box-body -->
@@ -178,6 +185,35 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="price" tabindex="-1" role="dialog" aria-labelledby="addnewLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addnewLabel">Agreed Price($)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form @submit.prevent="addPrice()">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="price">Price</label>
+                                <input v-model="form.price" type="number" class="form-control" name="price" id="price"
+                                       placeholder="price" :class="{ 'is-invalid': form.errors.has('price') }">
+                                <has-error :form="form" field="price"></has-error>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">
+                              <i class="fas fa-save"></i>
+                              Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -192,11 +228,36 @@
                 attachments:[],
                 formf: new FormData(),
                 form: new Form({
-
+                    price: ''
                 })
             }
         },
         methods:{
+          addPrice(){
+              this.form.post('/api/price/' + this.orderId)
+                    .then(() => {
+                        Fire.$emit('entry');
+                        toast.fire({
+                            type: 'success',
+                            title: 'Price updated successfully'
+                        });
+                        this.form.reset();
+                        $('#price').modal('hide');
+                    })
+                    .catch(error => {
+                        this.errors = error.response.data.errors;
+                        swal.fire({
+                          type: 'error',
+                          title: 'Error!!',
+                          text: error.response.data.msg,
+
+                        })
+                    })
+            },
+          priceModal(){
+                this.form.reset();
+                $('#price').modal('show');
+            },
           submit(){
               for(let i=0; i<this.attachments.length;i++){
                     this.formf.append('pics[]',this.attachments[i]);
@@ -253,6 +314,9 @@
             this.getDetails();
             this.getFilesCount();
             this.getFiles();
+            Fire.$on('entry', () =>{
+                this.getDetails();
+            })
         }
     }
 </script>
