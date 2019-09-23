@@ -3685,12 +3685,34 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
+    addPrice: function addPrice() {
+      var _this = this;
+
+      this.form.post('/api/price/' + this.orderId).then(function () {
+        Fire.$emit('entry');
+        toast.fire({
+          type: 'success',
+          title: 'Price updated successfully'
+        });
+
+        _this.form.reset();
+
+        $('#price').modal('hide');
+      })["catch"](function (error) {
+        _this.errors = error.response.data.errors;
+        swal.fire({
+          type: 'error',
+          title: 'Error!!',
+          text: error.response.data.msg
+        });
+      });
+    },
     priceModal: function priceModal() {
       this.form.reset();
       $('#price').modal('show');
     },
     submit: function submit() {
-      var _this = this;
+      var _this2 = this;
 
       for (var i = 0; i < this.attachments.length; i++) {
         this.formf.append('pics[]', this.attachments[i]);
@@ -3705,7 +3727,7 @@ __webpack_require__.r(__webpack_exports__);
         Fire.$emit('entry');
         $('#addnew').modal('hide');
 
-        _this.form.reset();
+        _this2.form.reset();
 
         swal.fire({
           type: 'success',
@@ -3736,34 +3758,39 @@ __webpack_require__.r(__webpack_exports__);
       axios.get("/api/download/" + id).then();
     },
     getDetails: function getDetails() {
-      var _this2 = this;
+      var _this3 = this;
 
       axios.get("/api/task/" + this.orderId).then(function (_ref) {
         var data = _ref.data;
-        return [_this2.details = data];
+        return [_this3.details = data];
       });
     },
     getFilesCount: function getFilesCount() {
-      var _this3 = this;
+      var _this4 = this;
 
       axios.get("/api/ifFiles/" + this.orderId).then(function (_ref2) {
         var data = _ref2.data;
-        return [_this3.filesCount = data];
+        return [_this4.filesCount = data];
       });
     },
     getFiles: function getFiles() {
-      var _this4 = this;
+      var _this5 = this;
 
       axios.get("/api/getFiles/" + this.orderId).then(function (_ref3) {
         var data = _ref3.data;
-        return [_this4.files = data];
+        return [_this5.files = data];
       });
     }
   },
   created: function created() {
+    var _this6 = this;
+
     this.getDetails();
     this.getFilesCount();
     this.getFiles();
+    Fire.$on('entry', function () {
+      _this6.getDetails();
+    });
   }
 });
 
@@ -86927,20 +86954,22 @@ var render = function() {
                             _vm._v(" "),
                             _c("td", [
                               _c("span", [
-                                _vm._v("$" + _vm._s(_vm.details.budget))
+                                _vm._v("$" + _vm._s(_vm.details.price))
                               ]),
                               _vm._v(" "),
-                              _c("span", [
-                                _c(
-                                  "button",
-                                  {
-                                    staticClass: "btn btn-sm btn-primary",
-                                    attrs: { type: "button" },
-                                    on: { click: _vm.priceModal }
-                                  },
-                                  [_vm._v("Add")]
-                                )
-                              ])
+                              !_vm.details.price
+                                ? _c("span", [
+                                    _c(
+                                      "button",
+                                      {
+                                        staticClass: "btn btn-sm btn-primary",
+                                        attrs: { type: "button" },
+                                        on: { click: _vm.priceModal }
+                                      },
+                                      [_vm._v("Add")]
+                                    )
+                                  ])
+                                : _vm._e()
                             ])
                           ])
                         ])
@@ -87228,7 +87257,7 @@ var render = function() {
                   on: {
                     submit: function($event) {
                       $event.preventDefault()
-                      return _vm.price()
+                      return _vm.addPrice()
                     }
                   }
                 },
@@ -87467,7 +87496,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "modal-header" }, [
       _c("h5", { staticClass: "modal-title", attrs: { id: "addnewLabel" } }, [
-        _vm._v("Agreed Price")
+        _vm._v("Agreed Price($)")
       ]),
       _vm._v(" "),
       _c(

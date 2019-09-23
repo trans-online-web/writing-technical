@@ -40,8 +40,8 @@
                 <tr>
                   <td>Agreed Price</td>
                   <td>
-                    <span>${{details.budget}}</span>
-                    <span><button type="button" class="btn btn-sm btn-primary" @click="priceModal">Add</button></span>
+                    <span>${{details.price}}</span>
+                    <span v-if="!details.price"><button type="button" class="btn btn-sm btn-primary" @click="priceModal">Add</button></span>
                   </td>
                 </tr>
               </tbody></table>
@@ -189,12 +189,12 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="addnewLabel">Agreed Price</h5>
+                        <h5 class="modal-title" id="addnewLabel">Agreed Price($)</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form @submit.prevent="price()">
+                    <form @submit.prevent="addPrice()">
                         <div class="modal-body">
                             <div class="form-group">
                                 <label for="price">Price</label>
@@ -233,6 +233,27 @@
             }
         },
         methods:{
+          addPrice(){
+              this.form.post('/api/price/' + this.orderId)
+                    .then(() => {
+                        Fire.$emit('entry');
+                        toast.fire({
+                            type: 'success',
+                            title: 'Price updated successfully'
+                        });
+                        this.form.reset();
+                        $('#price').modal('hide');
+                    })
+                    .catch(error => {
+                        this.errors = error.response.data.errors;
+                        swal.fire({
+                          type: 'error',
+                          title: 'Error!!',
+                          text: error.response.data.msg,
+
+                        })
+                    })
+            },
           priceModal(){
                 this.form.reset();
                 $('#price').modal('show');
@@ -293,6 +314,9 @@
             this.getDetails();
             this.getFilesCount();
             this.getFiles();
+            Fire.$on('entry', () =>{
+                this.getDetails();
+            })
         }
     }
 </script>
