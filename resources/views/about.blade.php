@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<!--== Start Header Wrapper ==-->
+@include('includes.transnav')
+<!--== End Header Wrapper ==-->
 <!--== Start About Page Hero Area ==-->
         <div class="about-hero-area">
             <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"

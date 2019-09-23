@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<!--== Start Header Wrapper ==-->
+@include('includes.transnav')
+<!--== End Header Wrapper ==-->
 	<!--== Start Service Page Hero Area  ==-->
     <div class="service-page-hero-area bg-img parallax" data-parallax-speed="0.75"
         data-bg="img/extra/service-page-hero-bg.jpg">

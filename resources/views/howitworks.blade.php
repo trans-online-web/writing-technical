@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<!--== Start Header Wrapper ==-->
+@include('includes.transnav')
+<!--== End Header Wrapper ==-->
 	<div class="justify-content-center call-to-action-landing sp-y parallax bg-img" data-parallax-speed="0.75" data-bg="img/call-to/call-to-bg-3.jpg">
         <div class="pt-5 mt-5">
         	<div class="section-title section-title--white mb-0">
