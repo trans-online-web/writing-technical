@@ -17,9 +17,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-1 order-lg-0">
                     <div class="about-page-content">
-                        <h3>A creative agency specialized in brand strategy and digital creation.</h3>
-                        <p>We combine classic brand strategy and account planning to find a brand’s true capability.
-                            Then we turn this capability into exceptional content, products, services and campaigns.
+                        <h3>How to order from us!</h3>
+                        <p>Since we work remotely, we do conduct the help online. The online service allows to know more about our work and get various samples essay topics on how to ‘write my essay in time.’<br>
+                        To get our services, you will have to create an account with us. To register for the account, you have to follow the steps below.
+                        <ul>
+                            <li><i class="fas fa-angle-double-right"></i> Click on the “Sign up” button.</li>
+                            <li> <i class="fas fa-angle-double-right"></i> On the ‘sign up’ page, fill out your details then click on the ‘sign up’ button.</li>
+                            <li> <i class="fas fa-angle-double-right"></i> You will receive a confirmation mail, and upon clicking it, you are done. An account will be created successfully.</li>
+                        </ul>
                         </p>
                     </div>
                 </div>
@@ -46,8 +51,8 @@
                             <h4 class="serial-no">01</h4>
                         </div>
                         <div class="list-box__info">
-                            <h6>Unlimited Colors</h6>
-                            <p>Freely try the colors until there’s one matching the spirit of your business.</p>
+                            <h6>Quality Guarantee</h6>
+                            <p>All our papers are assessed and evaluated by the quality assurance department before delivery.</p>
                         </div>
                     </div>
                 </div>
@@ -57,8 +62,8 @@
                             <h4 class="serial-no">02</h4>
                         </div>
                         <div class="list-box__info">
-                            <h6>Multi-purpose</h6>
-                            <p>Cover a range of themes which you can freely choose for your site.</p>
+                            <h6>Free Revision</h6>
+                            <p>Customers can request for unlimited revisions for up to two months from the submission date.</p>
                         </div>
                     </div>
                 </div>
@@ -68,8 +73,8 @@
                             <h4 class="serial-no">03</h4>
                         </div>
                         <div class="list-box__info">
-                            <h6>Responsive layouts</h6>
-                            <p>We’ve made sure Arden is perfectly adapted to any devices.</p>
+                            <h6>Originality</h6>
+                            <p>We deliver 100% original papers with 0% plagiarism.</p>
                         </div>
                     </div>
                 </div>
@@ -79,8 +84,8 @@
                             <h4 class="serial-no">04</h4>
                         </div>
                         <div class="list-box__info">
-                            <h6>Easy Customizations</h6>
-                            <p>Arden is made for your effortless establishment, explore it for yourself.</p>
+                            <h6>Money-back guarantee</h6>
+                            <p>Get a refund when the delivered paper does not either meet the requirements or is canceled by the school.</p>
                         </div>
                     </div>
                 </div>
@@ -90,8 +95,8 @@
                             <h4 class="serial-no">05</h4>
                         </div>
                         <div class="list-box__info">
-                            <h6>Creative Layouts</h6>
-                            <p>Arden offers a great collection of creative and beautiful layouts.</p>
+                            <h6>Compliance</h6>
+                            <p>We always ensure that we follow customers’ instructions to the latter. </p>
                         </div>
                     </div>
                 </div>
@@ -101,8 +106,8 @@
                             <h4 class="serial-no">06</h4>
                         </div>
                         <div class="list-box__info">
-                            <h6>SEO optimized</h6>
-                            <p>Never be left behind in the race first ranks from search engines.</p>
+                            <h6>Privacy and Confidentiality</h6>
+                            <p>When you request to write my thesis statement service, we neither share nor disclose clients’ data.</p>
                         </div>
                     </div>
                 </div>

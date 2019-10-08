@@ -28,7 +28,7 @@
                     <div class="col-12 text-center">
                         <div class="call-to-action-content call-to-action-content--startup">
                             <div class="call-to-action-content-inner">
-                                <h2>Start a new project?</h2><a href="contact.htm" class="btn btn-bordered">Contact
+                                <h2>How can I get help to write my essay? </h2><a href="contact.htm" class="btn btn-bordered">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -114,9 +114,8 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="gallery-banner-item gallery-banner-item-txt bg-brand">
                         <div class="gallery-banner-txt">
-                            <h4>Collaboration</h4>
-                            <p>Our collaborative approach means you are invited to work with our close-knit team as we
-                                strive to deliver truly personalised work.</p>
+                            <h4>Looking for a flexible custom essay writing service</h4>
+                            <p>On the online platform, there are many custom essays writing services up for grabs given their cheap pricing. We are not inexpensive as the other online essay writing services, but we offer affordable student prices without sacrificing the quality of the essay. </p>
                         </div>
                     </div>
                 </div>
@@ -126,9 +125,8 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="gallery-banner-item gallery-banner-item-txt bg-secondary">
                         <div class="gallery-banner-txt">
-                            <h4>Forward-thinking</h4>
-                            <p>We are always looking ahead to stay on top of the latest digital design and technology so
-                                the projects will be ready for tomorrow’s opportunities.</p>
+                            <h4>Writing a Custom essay.</h4>
+                            <p>Custom writing is more reliable than essay writing services. Custom essay writing, write all your articles according to the given instructions and your preferences. Our company is the best custom essay writing company on the Internet. We are confident of our writers who can handle any essay topic from any discipline and deliver no later than specified deadline.</p>
                         </div>
                     </div>
                 </div>
@@ -163,9 +161,8 @@
                     </div>
                     <div class="col-lg-6 col-xl-5 ml-auto order-0">
                         <div class="section-title section-title--white mb-0">
-                            <h2>Award winning marketing agency</h2>
-                            <p class="text-white">Arden's mission is a unique combination of broadcast, interactive and
-                                tech talent that has pointedly addressed the future.</p>
+                            <h2>We offer best customer service</h2>
+                            <p class="text-white">Our 24/7 support and the live chat ensure convenient collaboration between client and writer. Our writers are conversant with all formatting styles such as MLA, APA, Harvard, Chicago, and Turabian. We cite all sources used in writing your essay properly, and the word count is observed even with orders with short deadlines.  </p>
                         </div>
                     </div>
                 </div>
