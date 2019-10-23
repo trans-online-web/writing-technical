@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67399ab-a3c2-4ce6-9490-5edcda03281d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Events/ChatEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/MessangerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Events/ChatEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/ChatEvent.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +201,7 @@
       <workItem from="1567665710024" duration="4168000" />
       <workItem from="1569303571599" duration="2247000" />
       <workItem from="1571760135187" duration="782000" />
-      <workItem from="1571809366371" duration="4769000" />
+      <workItem from="1571809366371" duration="5461000" />
     </task>
     <servers />
   </component>

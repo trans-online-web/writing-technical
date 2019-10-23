@@ -4,6 +4,7 @@ namespace App\Events;
 
 
 use App\Messenger;
+use App\messengers;
 use App\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
@@ -22,7 +23,7 @@ class ChatEvent implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct(Messenger $message)
+    public function __construct(messengers $message)
     {
         $this->message = $message;
     }
