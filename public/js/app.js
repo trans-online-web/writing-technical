@@ -104459,6 +104459,7 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 Vue.component('chat', __webpack_require__(/*! ./components/Chat.vue */ "./resources/js/components/Chat.vue"));
 Vue.component('notification', __webpack_require__(/*! ./components/Notification.vue */ "./resources/js/components/Notification.vue")["default"]);
 Vue.component('Order', __webpack_require__(/*! ./components/Order.vue */ "./resources/js/components/Order.vue")["default"]);
+Vue.component('myoders', __webpack_require__(/*! ./components/Myoders.vue */ "./resources/js/components/Myoders.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
