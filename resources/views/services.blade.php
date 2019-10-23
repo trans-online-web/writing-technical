@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<!--== Start Header Wrapper ==-->
+@include('includes.transnav')
+<!--== End Header Wrapper ==-->
 	<!--== Start Service Page Hero Area  ==-->
     <div class="service-page-hero-area bg-img parallax" data-parallax-speed="0.75"
         data-bg="img/extra/service-page-hero-bg.jpg">
@@ -10,8 +13,7 @@
                     <div class="about-me-hero-content">
                         <div class="about-me-hero-content--inner mt-5">
                             <h2>Our services</h2>
-                            <p>We create experiences that transform brands, grow businesses and make people’s lives
-                                better. Small teams working on big challenges.</p>
+                            <p>Writing school essay has never been easy. For anyone to come up with a good essay, you will need to come up with good and reasonable objectives, reasonable points with facts, and most importantly you should be good in grammar and use better stylistic devices. Having all these requirements may not be an easy task since it requires a lot of time. Truth is that only a small number of students can write quality essays. No need to have questions like ‘who can help me write my school essay?’ We decided that you may need assistance in writing essays, and we are here to help.</p>
                         </div>
                     </div>
                 </div>
@@ -72,9 +74,7 @@
                                 <div class="list-box-item mt-lg-0">
                                     <div class="list-box__info">
                                         <h6 class="text-brand">BRANDING</h6>
-                                        <p>We combine classic brand strategy and account planning with digital strategy,
-                                            data and user research to find a brand’s true capability. Then we turn this
-                                            capability into products and campaigns.</p>
+                                        <p>Before undertaking any order, our custom essay writers ensure they have gone through instructions and requests; they immediately get back to you in case clarification is needed. It is done to ensure that we deliver your essay basing on the instructions and as proficient as it must be.</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,9 +82,7 @@
                                 <div class="list-box-item mt-lg-0">
                                     <div class="list-box__info">
                                         <h6 class="text-brand">USER EXPERIENCE</h6>
-                                        <p>We enable new user behaviors with relevant, useful and engaging design that
-                                            drives growth for impacts people’s lives. Digital devices and platforms augment
-                                            our ability to think.</p>
+                                        <p>All essays are doable, our essayists have vast knowledge in the field, and their academic level is unquestionable. Most of them are native English speakers with Masters and PhD degrees from UK and US universities.</p>
                                     </div>
                                 </div>
                             </div>

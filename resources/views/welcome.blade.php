@@ -19,36 +19,7 @@
 <body>
     <div>
         <!--== Start Header Wrapper ==-->
-        <header class="header-area transparent sticky-header">
-            <div class="container-fluid">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-5 col-lg-2">
-                        <div class="header-logo-area"><a href="index.html"><img class="logo-main"
-                                    src="img/logo.png" alt="Logo"> <img class="logo-light"
-                                    src="img/logo-light.png" alt="Logo"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 d-none d-lg-block">
-                        <div class="header-navigation-area">
-                            <ul class="main-menu nav justify-content-center">
-                                <li class="full-width active"><a href="index.html">Home</a>
-                                </li>
-                                <li class=""><a href="/howitworks">How it works</a>
-                                </li>
-                                <li class="full-width"><a href="/services">Services</a>
-                                </li>
-                                <li class=""><a href="/about">about us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-7 col-lg-2">
-                        <div class="header-action-area text-right"><a href="/login" class="btn-cart"><span
-                                    class="fas fa-sign-in-alt"> Sign Up</span> </a> <button class="btn-menu d-lg-none"><span></span> <span></span> <span></span></button></div>
-                    </div>
-                </div>
-            </div>
-        </header>
+        @include('includes.transnav')
         <!--== End Header Wrapper ==-->
         <div class="call-to-action-wrapper parallax" data-parallax-speed="0.55" data-bg="/img/call-to/call-to-bg-5.jpg"
             style="background-position: center 24.45%; background-image: url(&quot;assets/img/call-to/call-to-bg-5.jpg&quot;);">
@@ -57,7 +28,7 @@
                     <div class="col-12 text-center">
                         <div class="call-to-action-content call-to-action-content--startup">
                             <div class="call-to-action-content-inner">
-                                <h2>Start a new project?</h2><a href="contact.htm" class="btn btn-bordered">Contact
+                                <h2>How can I get help to write my essay? </h2><a href="contact.htm" class="btn btn-bordered">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -143,9 +114,8 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="gallery-banner-item gallery-banner-item-txt bg-brand">
                         <div class="gallery-banner-txt">
-                            <h4>Collaboration</h4>
-                            <p>Our collaborative approach means you are invited to work with our close-knit team as we
-                                strive to deliver truly personalised work.</p>
+                            <h4>Looking for a flexible custom essay writing service</h4>
+                            <p>On the online platform, there are many custom essays writing services up for grabs given their cheap pricing. We are not inexpensive as the other online essay writing services, but we offer affordable student prices without sacrificing the quality of the essay. </p>
                         </div>
                     </div>
                 </div>
@@ -155,9 +125,8 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="gallery-banner-item gallery-banner-item-txt bg-secondary">
                         <div class="gallery-banner-txt">
-                            <h4>Forward-thinking</h4>
-                            <p>We are always looking ahead to stay on top of the latest digital design and technology so
-                                the projects will be ready for tomorrow’s opportunities.</p>
+                            <h4>Writing a Custom essay.</h4>
+                            <p>Custom writing is more reliable than essay writing services. Custom essay writing, write all your articles according to the given instructions and your preferences. Our company is the best custom essay writing company on the Internet. We are confident of our writers who can handle any essay topic from any discipline and deliver no later than specified deadline.</p>
                         </div>
                     </div>
                 </div>
@@ -192,9 +161,8 @@
                     </div>
                     <div class="col-lg-6 col-xl-5 ml-auto order-0">
                         <div class="section-title section-title--white mb-0">
-                            <h2>Award winning marketing agency</h2>
-                            <p class="text-white">Arden's mission is a unique combination of broadcast, interactive and
-                                tech talent that has pointedly addressed the future.</p>
+                            <h2>We offer best customer service</h2>
+                            <p class="text-white">Our 24/7 support and the live chat ensure convenient collaboration between client and writer. Our writers are conversant with all formatting styles such as MLA, APA, Harvard, Chicago, and Turabian. We cite all sources used in writing your essay properly, and the word count is observed even with orders with short deadlines.  </p>
                         </div>
                     </div>
                 </div>

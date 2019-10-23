@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<!--== Start Header Wrapper ==-->
+@include('includes.transnav')
+<!--== End Header Wrapper ==-->
 <!--== Start About Page Hero Area ==-->
         <div class="about-hero-area">
             <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
@@ -25,7 +28,7 @@
                                 data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]">Here at Arden, we are free to do what we love.</div>
+                                data-paddingleft="[0,0,0,0]">At Technical Writing, we are here to help you.</div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption" id="slide-6-layer-6" data-x="['left','left','left','left']"
                                 data-hoffset="['370','105','105','15']" data-y="['bottom','bottom','bottom','bottom']"
@@ -36,8 +39,7 @@
                                 data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]">We create experiences where people can connect with brands
-                                the same way they connect with each other.</div>
+                                data-paddingleft="[0,0,0,0]">Choose us for any essay writing service, and you won’t regret contacting us.</div>
                         </li>
                     </ul>
                     <div class="tp-bannertimer tp-bottom"></div>
@@ -51,25 +53,21 @@
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-lg-4">
-                                    <h4 class="mb-0">A creative agency specialized in brand strategy and digital creation.</h4>
+                                    <h4 class="mb-0">Our vast resources and research capability bestowed on our writers lead to an on-time creation of a well-organized essay. </h4>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="list-box-item mt-lg-0">
                                         <div class="list-box__info">
-                                            <h6 class="text-brand">BRANDING</h6>
-                                            <p>We combine classic brand strategy and account planning with digital strategy,
-                                                data and user research to find a brand’s true capability. Then we turn this
-                                                capability into content, products and campaigns.</p>
+                                            <h6 class="text-brand">Creation of unique content</h6>
+                                            <p>When writing custom essays, we are driven by customer satisfaction, and we ensure the final product is of premium quality with original content to satisfy our clients, which is our biggest reward of our work. Our writers do extensive research and only use credible sources in completing your essay. We create unique essays free from plagiarism. </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="list-box-item mt-lg-0">
                                         <div class="list-box__info">
-                                            <h6 class="text-brand">USER EXPERIENCE</h6>
-                                            <p>We enable new user behaviors with relevant, useful and engaging design that
-                                                drives growth for businesses and impacts people’s lives. Digital devices and
-                                                platforms augment our ability to think.</p>
+                                            <h6 class="text-brand">Flexible pricing</h6>
+                                            <p>Our custom essay writing services offer quality custom paper at reasonable and affordable student prices. Be aware of cons who claim to be custom writing companies offering cheap essay writing services because they end up compromising the quality of your essay. All loyal customers are given 5% bonus for every order they make; the bonuses are later used in purchasing other papers. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,8 +87,7 @@
                                 </div>
                                 <div class="col-lg-9 m-auto text-center">
                                     <div class="success-dialogue sm-top">
-                                        <h4 class="mb-0">Success is no accident. It is hard word, preseverance, learning,
-                                            studying, sacrifice and of all, love of what you are doing or learning to do.</h4>
+                                        <h4 class="mb-0">All custom written papers are done by our professional writers; help us help you get it done. Follow the few simple instructions to make an order. The order will be delivered right to your inbox at any time within the order deadline. When in need of assistance do not hesitate to use our ‘custom essay service helps’ and you will get served with our skilled customer care team. Order now!</h4>
                                     </div>
                                 </div>
                             </div>
