@@ -2815,6 +2815,14 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+var _methods;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
 //
 //
 //
@@ -2901,22 +2909,60 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    user: {
+      type: Object,
+      required: true
+    }
+  },
   data: function data() {
     return {
       orders: {},
-      form: new Form({})
+      form: new Form({
+        status: '',
+        id: ''
+      })
     };
   },
-  methods: {
+  mounted: function mounted() {
+    var _this = this;
+
+    Echo["private"]("message.".concat(this.user.id)).listen('ChatEvent', function (e) {
+      _this.$emit('newMessage', e.message);
+    });
+  },
+  methods: (_methods = {
     getOrders: function getOrders() {
-      var _this = this;
+      var _this2 = this;
 
       axios.get("api/student-task").then(function (_ref) {
         var data = _ref.data;
-        return [_this.orders = data];
+        return [_this2.orders = data];
       });
+    },
+    editModal: function editModal(order, id) {
+      $('#addnew').modal('show');
+      this.form.fill(order);
+      this.form.id = id;
+    },
+    updateStatus: function updateStatus() {
+      this.form.put('api/task/' + this.form.id).then(function () {
+        $('#addnew').modal('hide');
+        swal.fire('Updated!', 'Status has been updated.', 'success');
+        Fire.$emit('entry');
+      })["catch"](function () {});
     }
-  },
+  }, _defineProperty(_methods, "editModal", function editModal(order, id) {
+    $('#addnew').modal('show');
+    this.form.fill(order);
+    this.form.id = id;
+  }), _defineProperty(_methods, "updateStatus", function updateStatus() {
+    this.form.put('api/task/' + this.form.id).then(function () {
+      $('#addnew').modal('hide');
+      swal.fire('Updated!', 'Status has been updated.', 'success');
+      Fire.$emit('entry');
+    })["catch"](function () {});
+  }), _methods),
   created: function created() {
     this.getOrders();
   }
@@ -4252,7 +4298,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    user: {
+      type: Object,
+      required: true
+    }
+  },
   data: function data() {
     return {
       orders: {},
@@ -4261,6 +4315,13 @@ __webpack_require__.r(__webpack_exports__);
         id: ''
       })
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    Echo["private"]("message.".concat(this.user.id)).listen('ChatEvent', function (e) {
+      _this.$emit('new', e.message);
+    });
   },
   methods: {
     updateStatus: function updateStatus() {
@@ -4276,20 +4337,20 @@ __webpack_require__.r(__webpack_exports__);
       this.form.id = id;
     },
     getOrders: function getOrders() {
-      var _this = this;
+      var _this2 = this;
 
       axios.get("/api/task").then(function (_ref) {
         var data = _ref.data;
-        return [_this.orders = data];
+        return [_this2.orders = data];
       });
     }
   },
   created: function created() {
-    var _this2 = this;
+    var _this3 = this;
 
     this.getOrders();
     Fire.$on('entry', function () {
-      _this2.getOrders();
+      _this3.getOrders();
     });
   }
 });
@@ -86210,9 +86271,55 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(order.subject_name))]),
                       _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(order.status))]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(order.subject_name))]),
+                      _c("td", [
+                        order.status == "Pending"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-warning" },
+                              [_vm._v("Pending..")]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        order.status == "Paid"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-info" },
+                              [_vm._v("Paid")]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        order.status == "Working"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-dark" },
+                              [_vm._v("Working")]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        order.status == "Completed"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-primary" },
+                              [_vm._v("Completed")]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        order.status == "Approved"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-success" },
+                              [_vm._v("Approved")]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        order.status == "Revision"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-danger" },
+                              [_vm._v("Revision")]
+                            )
+                          : _vm._e()
+                      ]),
                       _vm._v(" "),
                       _c("td", [
                         _c("i", { staticClass: "fa fa-clock-o mr-1" }),
@@ -86246,7 +86353,7 @@ var render = function() {
                             attrs: { href: "#" },
                             on: {
                               click: function($event) {
-                                return _vm.deleteorder(order.id)
+                                return _vm.editModal(order, order.id)
                               }
                             }
                           },
@@ -86304,7 +86411,7 @@ var render = function() {
                       "div",
                       { staticClass: "form-group" },
                       [
-                        _c("label", [_vm._v("Select Role")]),
+                        _c("label", [_vm._v("Select Option")]),
                         _vm._v(" "),
                         _c(
                           "select",
@@ -86347,20 +86454,12 @@ var render = function() {
                               _vm._v("--Select Status--")
                             ]),
                             _vm._v(" "),
-                            _c("option", { attrs: { value: "Pending" } }, [
-                              _vm._v("Pending")
+                            _c("option", { attrs: { value: "Approved" } }, [
+                              _vm._v("Approve submitted Work")
                             ]),
                             _vm._v(" "),
-                            _c("option", { attrs: { value: "Paid" } }, [
-                              _vm._v("Paid")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "Working" } }, [
-                              _vm._v("Working")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "Completed" } }, [
-                              _vm._v("Completed")
+                            _c("option", { attrs: { value: "Revision" } }, [
+                              _vm._v("Order Revision")
                             ])
                           ]
                         ),
@@ -86392,9 +86491,11 @@ var staticRenderFns = [
       _c("h3", { staticClass: "card-title" }, [_vm._v("My Orders")]),
       _vm._v(" "),
       _c("div", { staticClass: "card-tools" }, [
-        _c("button", { staticClass: "btn btn-success pull-left" }, [
-          _vm._v("Add"),
-          _c("i", { staticClass: "fa fa-user-plus fa-fw" })
+        _c("a", { attrs: { href: "/task" } }, [
+          _c("button", { staticClass: "btn btn-success pull-left" }, [
+            _vm._v("Add new order  "),
+            _c("i", { staticClass: "fas fa-plus" })
+          ])
         ])
       ])
     ])
@@ -88210,8 +88311,24 @@ var render = function() {
                         order.status == "Completed"
                           ? _c(
                               "span",
-                              { staticClass: "badge badge-pill badge-success" },
+                              { staticClass: "badge badge-pill badge-primary" },
                               [_vm._v("Completed")]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        order.status == "Approved"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-success" },
+                              [_vm._v("Approved")]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        order.status == "Revision"
+                          ? _c(
+                              "span",
+                              { staticClass: "badge badge-pill badge-danger" },
+                              [_vm._v("Revision")]
                             )
                           : _vm._e()
                       ]),
