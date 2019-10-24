@@ -31,7 +31,7 @@
                             </div>
                                 </div>
                             </div>
-                            
+
 
                             <div class="row">
                                 <div class="col">
@@ -74,26 +74,26 @@
                                 <has-error :form="form" field="date"></has-error>
                             </div>
                                 </div>
-                                
+
                             </div>
                             <div class="row">
                                 <div class="col">
                                 <label for="spacing">Spacing</label><br>
                                 <div class="form-check form-check-inline">
-                                <input v-model="form.spacing" class="form-check-input" type="radio" name="spacing" id="spacing" value="single" 
+                                <input v-model="form.spacing" class="form-check-input" type="radio" name="spacing" id="spacing" value="single"
                                         :class="{ 'is-invalid': form.errors.has('spacing') }">
                                 <label class="form-check-label" for="inlineRadio1">Single</label>
                                 <has-error :form="form" field="spacing"></has-error>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input v-model="form.spacing" class="form-check-input" type="radio" name="spacing" id="spacing" value="double" 
+                                <input v-model="form.spacing" class="form-check-input" type="radio" name="spacing" id="spacing" value="double"
                                           :class="{ 'is-invalid': form.errors.has('spacing') }">
                                 <label class="form-check-label" for="inlineRadio1">Double</label>
                                 <has-error :form="form" field="spacing"></has-error>
                                 </div>
                                 </div>
                                 <div class="col">
-                                
+
                                 </div>
                             </div>
                             <hr>
@@ -120,7 +120,7 @@
                                        placeholder="budget" :class="{ 'is-invalid': form.errors.has('budget') }">
                                 <has-error :form="form" field="budget"></has-error>
                             </div>
-                            
+
                         </div>
                         <div class="modal-footer" v-if="this.isOk == 1">
                             <button type="submit" class="btn btn-success" @click="submit()">
@@ -201,7 +201,7 @@ import 'vue-datetime/dist/vue-datetime.css';
                 let dd = this.form.date;
                let diff = moment(dd).diff(this.now, 'minutes');
                this.diff = diff;
-               
+
                if(this.form.spacing == 'double'){
 
                 if(this.form.level == 'High School'){
@@ -508,7 +508,7 @@ import 'vue-datetime/dist/vue-datetime.css';
                         //error
                     });
 
-                  
+
             },
             fieldChange(e){
                 let selectedFiles=e.target.files;

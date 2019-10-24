@@ -76,7 +76,7 @@
             </div>
         </nav>
  --}}
-        
+
         @yield('content')
         <!-- Start Off Canvas Menu Wrapper -->
         <aside class="off-canvas-wrapper">
