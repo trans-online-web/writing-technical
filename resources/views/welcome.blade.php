@@ -24,12 +24,11 @@
         <div class="call-to-action-wrapper parallax" data-parallax-speed="0.55" data-bg="/img/call-to/call-to-bg-5.jpg"
             style="background-position: center 24.45%; background-image: url(&quot;assets/img/call-to/call-to-bg-5.jpg&quot;);">
             <div class="container">
-                <div class="row">
+                <div class="row pt-5">
                     <div class="col-12 text-center">
                         <div class="call-to-action-content call-to-action-content--startup">
                             <div class="call-to-action-content-inner">
-                                <h2>How can I get help to write my essay? </h2><a href="contact.htm" class="btn btn-bordered">Contact
-                                    Us</a>
+                                <h2>How can I get help to write my essay? </h2><a href="about.htm" class="btn btn-bordered">About Us</a>
                             </div>
                         </div>
                     </div>
