@@ -2583,16 +2583,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    user: {
-      type: Object,
-      required: true
-    }
-  },
   data: function data() {
     return {
       message: '',
       typing: '',
+      user: {},
       users: {},
       messages: [],
       orderId: this.$route.params.orderId,
@@ -2609,7 +2604,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    Echo["private"]("message.".concat(this.user.id)).listen('ChatEvent', function (e) {
+    Echo["private"]("message.".concat(user['id'])).listen('ChatEvent', function (e) {
       _this.messages.push(e.message);
     }).listenForWhisper('typing', function (e) {
       if (e.name != '') {
@@ -2741,22 +2736,13 @@ __webpack_require__.r(__webpack_exports__);
         return [_this8.files = data];
       });
     },
-    getUser: function getUser() {
+    getThisUser: function getThisUser() {
       var _this9 = this;
 
-      if (this.$gate.isAdmin()) {
-        axios.get("/api/getUser/" + this.orderId).then(function (_ref5) {
-          var data = _ref5.data;
-          return [_this9.users = data];
-        });
-      }
-
-      if (this.$gate.isStudent()) {
-        axios.get("/api/getAdmin/").then(function (_ref6) {
-          var data = _ref6.data;
-          return [_this9.users = data];
-        });
-      }
+      axios.get("/api/getThisUser/" + this.orderId).then(function (_ref5) {
+        var data = _ref5.data;
+        return [_this9.user = data];
+      });
     },
     getMessages: function getMessages() {
       var _this10 = this;
@@ -2765,11 +2751,19 @@ __webpack_require__.r(__webpack_exports__);
         return _this10.messages = response.data;
       });
     },
-    getUnread: function getUnread() {
+    getUser: function getUser() {
       var _this11 = this;
 
+      axios.get("/api/getAdmin/").then(function (_ref6) {
+        var data = _ref6.data;
+        return [_this11.users = data];
+      });
+    },
+    getUnread: function getUnread() {
+      var _this12 = this;
+
       axios.get("/api/unread/" + this.orderId).then(function (response) {
-        return _this11.unreadIds = response['unread'];
+        return _this12.unreadIds = response['unread'];
       });
     }
   },
@@ -2778,28 +2772,33 @@ __webpack_require__.r(__webpack_exports__);
       this.scrollToBottom();
     },
     message: function message() {
-      Echo["private"]("message.".concat(this.user.id)).whisper('typing', {
+      Echo["private"]("message.".concat(user['id'])).whisper('typing', {
         name: this.message
       });
     }
   },
   created: function created() {
-    var _this12 = this;
+    var _this13 = this;
 
     this.getDetails();
     this.getFilesCount();
     this.getFiles();
     this.getUser();
+    this.getThisUser();
     this.getMessages();
     this.getCompleted();
     Fire.$on('entry', function () {
-      _this12.getDetails();
+      _this13.getDetails();
 
-      _this12.getFilesCount();
+      _this13.getFilesCount();
 
-      _this12.getFiles();
+      _this13.getFiles();
 
-      _this12.getMessages();
+      _this13.getUser();
+
+      _this13.getMessages();
+
+      _this13.getThisUser();
     });
   }
 });
@@ -105919,8 +105918,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kollynce/Documents/writing-technical/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/kollynce/Documents/writing-technical/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\writing-technical\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\writing-technical\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

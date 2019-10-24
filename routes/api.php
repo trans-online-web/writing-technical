@@ -32,7 +32,9 @@ Route::get('ifFiles/{orderId}','API\TaskController@ifFiles');
 Route::get('getFiles/{orderId}','API\TaskController@getFiles');
 Route::post('addFiles/{orderId}','API\TaskController@addFiles');
 Route::post('price/{orderId}','API\TaskController@addPrice');
-
+Route::get('getUser/{orderId}','API\TaskController@user');
+Route::get('getAdmin','API\TaskController@admin');
+Route::get('getThisUser/{orderId}','API\TaskController@ThisUser');
 Route::get('download/{id}','API\TaskController@downloadFile');
 
 Route::post('completed/{orderId}','API\CompletedController@store');

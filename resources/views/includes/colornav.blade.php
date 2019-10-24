@@ -37,6 +37,9 @@
                             </li> --}}
                         @endif
                     @else
+                        <li class="nav-item">
+                            <a href="/task" class="btn btn-lg btn-success">Submit An Order</a>
+                        </li>
                         <li class="has-submenu"><a href="#"> {{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="submenu-nav">
                                 <li><a class="dropdown-item" href="{{ route('logout') }}"
