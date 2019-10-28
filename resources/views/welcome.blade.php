@@ -28,7 +28,7 @@
                     <div class="col-12 text-center">
                         <div class="call-to-action-content call-to-action-content--startup">
                             <div class="call-to-action-content-inner">
-                                <h2>How can I get help to write my essay? </h2><a href="about.htm" class="btn btn-bordered">About Us</a>
+                                <h2>How can I get help to write my essay? </h2><a href="/about" class="btn btn-bordered">About Us</a>
                             </div>
                         </div>
                     </div>

@@ -4234,7 +4234,7 @@ input[type="button"].btn-block {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: row;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -25135,13 +25135,13 @@ input[type=button].btn-block {
   text-decoration: none;
 }
 
-.navbar-nav {
+/*.navbar-nav {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-}
+}*/
 
 .navbar-nav .nav-link {
   padding-right: 0;

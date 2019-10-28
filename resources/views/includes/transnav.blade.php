@@ -7,7 +7,7 @@
                             src="img/logo-light.png" alt="Logo"></a>
                 </div>
             </div>
-            <div class="col-lg-8 d-none d-lg-block">
+            <div class="col-lg-7 d-none d-lg-block">
                 <div class="header-navigation-area">
                     <ul class="main-menu nav justify-content-center">
                         <li class="full-width active"><a href="/">Home</a>
@@ -21,7 +21,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-7 col-lg-2">
+            <div class="col-7 col-lg-3">
                 <ul class="navbar-nav ml-auto">
                     @guest
                         <li class="nav-item">
@@ -36,6 +36,9 @@
                             </li> --}}
                         @endif
                     @else
+                        <li class="nav-item pr-3">
+                            <a href="/task" class="btn  btn-primary">Submit An Order</a>
+                        </li>
                         <li class="has-submenu"><a href="#"> {{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="submenu-nav">
                                 <li><a class="dropdown-item" href="/myorders">My Orders</a></li>
