@@ -28,20 +28,19 @@
                 <div class="row mtn-30">
                     <div class="col-md-4 text-center">
                         <div class="icon-box-item">
-                            <div class="icon-box__icon"><i class="icon-basic-pencil-ruler"></i></div>
+                            <div class="icon-box__icon"><i class="icon-basic-message-txt"></i></div>
                             <div class="icon-box__txt">
-                                <h6>Digital Solutions</h6>
-                                <p>Find success in the digital world, where clients love evolving technologies.</p>
+                                <h6>Writing</h6>
+                                <p>Submit your order to us, specify the topic, number of words, formatting. We will produce a paper that meets your requirements.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="icon-box-item">
-                            <div class="icon-box__icon"><i class="icon-basic-message-txt"></i></div>
+                            <div class="icon-box__icon"><i class="icon-basic-pencil-ruler"></i></div>
                             <div class="icon-box__txt">
-                                <h6>Communications</h6>
-                                <p>Brands are business assets. They drive choice, create value, and engender
-                                    loyalty.</p>
+                                <h6>Editing</h6>
+                                <p>Need a professional to have a look at your writing? We are here. Get help on, refining your writing, styling and structuring your paper.</p>
                             </div>
                         </div>
                     </div>
@@ -49,9 +48,8 @@
                         <div class="icon-box-item">
                             <div class="icon-box__icon"><i class="icon-basic-globe"></i></div>
                             <div class="icon-box__txt">
-                                <h6>Creative Strategy</h6>
-                                <p>Brands are business assets. They drive choice, create value, and engender
-                                    loyalty.</p>
+                                <h6>Proofreading</h6>
+                                <p>We proofread your paper by reviewing formatting, page numbers, headers, etc. and let you have a flawless paper in the end.</p>
                             </div>
                         </div>
                     </div>
@@ -73,7 +71,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="list-box-item mt-lg-0">
                                     <div class="list-box__info">
-                                        <h6 class="text-brand">BRANDING</h6>
+                                        <!-- <h6 class="text-brand">BRANDING</h6> -->
                                         <p>Before undertaking any order, our custom essay writers ensure they have gone through instructions and requests; they immediately get back to you in case clarification is needed. It is done to ensure that we deliver your essay basing on the instructions and as proficient as it must be.</p>
                                     </div>
                                 </div>
@@ -81,43 +79,93 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="list-box-item mt-lg-0">
                                     <div class="list-box__info">
-                                        <h6 class="text-brand">USER EXPERIENCE</h6>
+                                        <!-- <h6 class="text-brand">USER EXPERIENCE</h6> -->
                                         <p>All essays are doable, our essayists have vast knowledge in the field, and their academic level is unquestionable. Most of them are native English speakers with Masters and PhD degrees from UK and US universities.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-10">
-                            <div class="col-md-6 col-lg-4">
+                            <div class="cl-md-12 col-lg-12 mt-5">
+                                <h4 class="text-brand">Apart from writing essays we also offer;</h4>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
                                 <div class="list-box-item list-box-item--white">
                                     <div class="list-box__serial">
                                         <h4 class="serial-no">01</h4>
                                     </div>
                                     <div class="list-box__info">
-                                        <h6>Brainstorm</h6>
-                                        <p>All the team gather to think about the issue, discuss and give ideas.</p>
+                                        <h6>Customized services on any Discipline</h6>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-4 col-lg-3">
                                 <div class="list-box-item list-box-item--white">
                                     <div class="list-box__serial">
                                         <h4 class="serial-no">02</h4>
                                     </div>
                                     <div class="list-box__info">
-                                        <h6>Design</h6>
-                                        <p>Sketch, PSD or Firework the ideas into visible design layouts.</p>
+                                        <h6>Create PowerPoint presentation</h6>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-4 col-lg-3">
                                 <div class="list-box-item list-box-item--white">
                                     <div class="list-box__serial">
                                         <h4 class="serial-no">03</h4>
                                     </div>
                                     <div class="list-box__info">
-                                        <h6>Product testing</h6>
-                                        <p>Creative director review the final design and see if we can release it.</p>
+                                        <h6>Design, programming assignments</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">04</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Calculations</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">05</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Lab Reports</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">06</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Creative writing</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">07</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Statistical reports </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="list-box-item list-box-item--white">
+                                    <div class="list-box__serial">
+                                        <h4 class="serial-no">08</h4>
+                                    </div>
+                                    <div class="list-box__info">
+                                        <h6>Cover Letters</h6>
                                     </div>
                                 </div>
                             </div>

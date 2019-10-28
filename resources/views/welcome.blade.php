@@ -55,9 +55,8 @@
                                         <h4 class="serial-no">01</h4>
                                     </div>
                                     <div class="list-box__info">
-                                        <h6>Digital Solutions</h6>
-                                        <p>Find success in the digital world, where clients love evolving technologies.
-                                        </p>
+                                        <h6>Time Saver</h6>
+                                        <!-- <p>Find success in the digital world, where clients love evolving technologies.</p> -->
                                     </div>
                                 </div>
                             </div>
@@ -67,8 +66,8 @@
                                         <h4 class="serial-no">02</h4>
                                     </div>
                                     <div class="list-box__info">
-                                        <h6>Creative Strategy</h6>
-                                        <p>Delighting users with simple and functional products and services.</p>
+                                        <h6>100% Private</h6>
+                                        <!-- <p>Delighting users with simple and functional products and services.</p> -->
                                     </div>
                                 </div>
                             </div>
@@ -78,9 +77,8 @@
                                         <h4 class="serial-no">03</h4>
                                     </div>
                                     <div class="list-box__info">
-                                        <h6>Communications</h6>
-                                        <p>Brands are business assets. They drive choice, create value, and engender
-                                            loyalty.</p>
+                                        <h6>Original Work</h6>
+                                        <!-- <p>Brands are business assets. They drive choice, create value, and engende loyalty.</p> -->
                                     </div>
                                 </div>
                             </div>
@@ -90,8 +88,8 @@
                                         <h4 class="serial-no">04</h4>
                                     </div>
                                     <div class="list-box__info">
-                                        <h6>Integrated marketing</h6>
-                                        <p>Driving sales with a cross-channel approach to communications.</p>
+                                        <h6>24/7 Assistance</h6>
+                                        <!-- <p>Driving sales with a cross-channel approach to communications.</p> -->
                                     </div>
                                 </div>
                             </div>
