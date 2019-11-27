@@ -186,15 +186,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 Dashboard
                             </p>
                         </router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/chat" class="nav-link text-dark">
-                            <i class="fas fa-comment-alt yellow"></i>
-                            <p>
-                                Chat
-                            </p>
-                        </router-link>
-                    </li>
+                    </li
                     <li class="nav-item">
                         <router-link to="/subject" class="nav-link text-dark">
                             <i class="nav-icon fas fa-book-open green"></i>
@@ -205,7 +197,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </li>
                     <li class="nav-item">
                         <router-link to="/documents" class="nav-link text-dark">
-                            <i class="fas fa-file-word indigo"></i>
+                            <i class="nav-icon  fas fa-file-word indigo"></i>
                             <p>
                                 Documents
                             </p>
@@ -213,7 +205,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </li>
                     <li class="nav-item">
                         <router-link to="/levels" class="nav-link text-dark">
-                            <i class="nav-icon fas fa-level-up-alt cyan"></i>
+                            <i class="nav-icon fas fa-sort-amount-up-alt cyan"></i>
                             <p>
                                 Levels
                             </p>
@@ -224,14 +216,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <i class="nav-icon fas fa-book white"></i>
                             <p>
                                Orders
-                            </p>
-                        </router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/MyOrder" class="nav-link text-dark">
-                           <i class="fas fa-folder blue"></i>
-                            <p>
-                                MyOrders
                             </p>
                         </router-link>
                     </li>
