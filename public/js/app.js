@@ -87229,7 +87229,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-success btn-sm",
+                        staticClass: "mybtn",
                         attrs: { type: "button" },
                         on: {
                           click: function($event) {
@@ -87300,7 +87300,7 @@ var render = function() {
                       _c(
                         "button",
                         {
-                          staticClass: "btn btn-success",
+                          staticClass: "mybtn",
                           attrs: { type: "submit" },
                           on: {
                             click: function($event) {

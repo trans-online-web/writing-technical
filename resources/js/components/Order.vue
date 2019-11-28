@@ -111,7 +111,7 @@
                             <hr>
                             <div class="form-group">
                                 <label for="suggested">Suggested</label>
-                                <button @click="getDiff()" type="button" class="btn btn-success btn-sm">Compute</button>
+                                <button @click="getDiff()" type="button" class="mybtn">Compute</button>
                                 <p>${{this.suggestion}}</p>
                             </div>
                             <div class="form-group" v-if="this.isOk == 1">
@@ -123,7 +123,7 @@
 
                         </div>
                         <div class="modal-footer" v-if="this.isOk == 1">
-                            <button type="submit" class="btn btn-success" @click="submit()">
+                            <button type="submit" class="mybtn" @click="submit()">
                                 <i class="fa fa-send"></i>
                                 Submit
                             </button>

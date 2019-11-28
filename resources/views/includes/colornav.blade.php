@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row no-gutters align-items-center">
             <div class="col-2 col-lg-2">
-                <div class="header-logo-area"><a href="index.html"><img class="logo-main"
+                <div class="header-logo-area"><a href="/"><img class="logo-main"
                             src="img/logo.png" alt="Logo"> <img class="logo-light"
                             src="img/logo-light.png" alt="Logo"></a>
                 </div>
