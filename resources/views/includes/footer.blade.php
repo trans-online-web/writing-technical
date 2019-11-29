@@ -10,21 +10,20 @@
                             <div class="widget-item">
                                 <div class="about-widget"><a href="index.html"><img src="img/logo-light.png"
                                             alt="Logo"></a>
-                                    <p>During the summer my wife and I got to go on an amazing road trip in
-                                        Vancouver Mountain.</p>
+                                    <p>is a team of professionals ready to help you in essay writing and editing fields. We have many years of experience, and we are there when you need any form of assistance.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-2 ml-auto">
                             <div class="widget-item">
-                                <h4 class="widget-title">ABOUT US</h4>
+                                <h4 class="widget-title">PAGES</h4>
                                 <div class="widget-body">
                                     <ul class="widget-list">
-                                        <li><a href="#">Our company</a></li>
-                                        <li><a href="#">Contact us</a></li>
-                                        <li><a href="#">Our services</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Our team</a></li>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/howitworks">How it works</a></li>
+                                        <li><a href="services">Services</a></li>
+                                        <li><a href="about">About Us</a></li>
+                                        <li><a href="terms">Terms and Conditions</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -44,10 +43,14 @@
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="widget-item">
-                                <h4 class="widget-title">STUDIO</h4>
+                                <h4 class="widget-title">Quick Links</h4>
                                 <div class="widget-body">
-                                    <address>2005 Stokes Isle Apartment. 896, Washington 10010,
-                                        USA<br>https://example.com<br>(+68) 120034509</address>
+                                    <ul class="widget-list">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">SignUp</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Terms and Conditions</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
