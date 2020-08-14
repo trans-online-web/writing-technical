@@ -87229,7 +87229,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-success btn-sm",
+                        staticClass: "mybtn",
                         attrs: { type: "button" },
                         on: {
                           click: function($event) {
@@ -87300,7 +87300,7 @@ var render = function() {
                       _c(
                         "button",
                         {
-                          staticClass: "btn btn-success",
+                          staticClass: "mybtn",
                           attrs: { type: "submit" },
                           on: {
                             click: function($event) {
@@ -104525,8 +104525,8 @@ if (token) {
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
-  key: "13fbb2237f308a46b5e2",
-  cluster: "ap2",
+  key: "",
+  cluster: "mt1",
   encrypted: true
 });
 
@@ -105918,8 +105918,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\writing-technical\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\writing-technical\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/kollynce/Documents/writing-technical/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/kollynce/Documents/writing-technical/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
