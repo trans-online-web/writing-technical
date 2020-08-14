@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" v-if="$gate.isAdmin()">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="row mt-5">
@@ -12,7 +12,7 @@
                                 <p>Pending approval</p>
                             </div>
                             <div class="icon">
-                               <i class="fas fa-hourglass-start white"></i>
+                                <i class="fas fa-hourglass-start white"></i>
                             </div>
                             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
@@ -66,14 +66,15 @@
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 
 <script>
     export default {
-            data(){
-                return{
-                    dash: {}
+        data(){
+            return{
+                dash: {}
             }
         },
         methods :{
@@ -83,6 +84,9 @@
         },
         created() {
             this.loadDash();
+            this.$store.dispatch('getOrdersAdmin');
+            this.$store.dispatch('getDocuments');
+            this.$store.dispatch('getSubjects');
         }
     }
 </script>

@@ -2,31 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67399ab-a3c2-4ce6-9490-5edcda03281d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Completed.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Unpaid.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blogcontent.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/disputed.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/faq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/myorderdetails.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/myprofile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/onprogress.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/payment.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/privacy_policy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/refaral.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/revision.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sample.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sampleContent.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/terms.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/LogsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/RevisionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SampleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Logs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Revision.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Sample.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_092623_create_samples_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_092919_create_revisions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093216_create_logs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093318_create_blogs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093409_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093449_create_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Blog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Blog/BlogContent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Blog/BlogUser.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/BlogCategories.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Completed.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Disputed.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/MyDashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Myprofile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Onprogress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Payment.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Pending.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Readmore.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Refaral.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Revision.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/SampleClient.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/SampleContent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Samples.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/SystemLog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/UserDetails.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/store.js.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/writting-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/writting-website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Documents.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Documents.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Order.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Subjects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Subjects.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Users.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/colornav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/colornav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/transnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/transnav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +73,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>

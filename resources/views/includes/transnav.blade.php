@@ -18,6 +18,10 @@
                         </li>
                         <li class=""><a href="/about">about us</a>
                         </li>
+
+                        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/sample">Samples</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,6 +40,7 @@
                             <li class="has-submenu"><a href="#"> {{ Auth::user()->name }} <span class="caret"></span></a>
                                 <ul class="submenu-nav">
                                     <li><a class="dropdown-item" href="/myorders">My Orders</a></li>
+                                    <a class="dropdown-item" href="/mydashboard">My Dashboard</a>
                                     <li><a class="dropdown-item" href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
