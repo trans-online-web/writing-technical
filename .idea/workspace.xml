@@ -2,61 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67399ab-a3c2-4ce6-9490-5edcda03281d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Blog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/LogsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/RevisionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SampleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Logs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Revision.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Sample.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_092623_create_samples_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_092919_create_revisions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093216_create_logs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093318_create_blogs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093409_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_093449_create_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Blog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Blog/BlogContent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Blog/BlogUser.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/BlogCategories.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Completed.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Disputed.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/MyDashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Myprofile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Onprogress.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Payment.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Pending.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Readmore.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Refaral.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Revision.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/SampleClient.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/SampleContent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Samples.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/SystemLog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/UserDetails.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/profile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/store.js.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Documents.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Documents.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Order.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Subjects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Subjects.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Users.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/colornav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/colornav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Onprogress.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Onprogress.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/store.js.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/transnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/transnav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sample.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sample.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +38,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -275,6 +244,7 @@
       <workItem from="1574920508669" duration="184000" />
       <workItem from="1597328402407" duration="578000" />
       <workItem from="1597388002658" duration="1787000" />
+      <workItem from="1597643548306" duration="2664000" />
     </task>
     <servers />
   </component>
@@ -298,6 +268,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1597403538259">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597403538259" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1597403538259">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597403538259" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1597403538259">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597403538259" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1597403538259">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597403538259" />
     <state x="183" y="311" key="NewPhpFileDialog" timestamp="1597390256144">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
